@@ -25,6 +25,24 @@ function Main(props) {
         getDriver();
     };
 
+    const updateDriver = async (driver, id) => {
+        await fetch(URL + id, { 
+            method: "PUT" , 
+            headers: {
+                "Content-Type": "Application/json", 
+            },
+            body: JSON.stringify(driver),
+        });
+        getDriver();
+    }
+
+    const deleteDriver = async id => {
+        await fetch(URL + id, { 
+            method: "DELETE", 
+        })
+        getDriver();
+    }
+
     useEffect(() => getDriver(), []);
 
     return (
@@ -37,6 +55,9 @@ function Main(props) {
                     path="/driver/:id"
                     render={(rp) => (
                         <Show
+                            driver={driver}
+                            updateDriver={updateDriver}
+                            deleteDriver={deleteDriver}
                             {...rp}
                         />
                     )}
