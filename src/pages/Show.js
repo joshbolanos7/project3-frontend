@@ -47,9 +47,16 @@ function Show(props) {
                 />
                 <input
                     type="text"
-                    value={editForm.title}
-                    name="title"
-                    placeholder="title"
+                    value={editForm.team}
+                    name="team"
+                    placeholder="team"
+                    onChange={handleChange}
+                />
+                 <input
+                    type="text"
+                    value={editForm.rating}
+                    name="rating"
+                    placeholder="rating"
                     onChange={handleChange}
                 />
                 <input type="submit" value="Update Person" />
