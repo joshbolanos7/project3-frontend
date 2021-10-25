@@ -59,7 +59,7 @@ function Show(props) {
                     placeholder="rating"
                     onChange={handleChange}
                 />
-                <input type="submit" value="Update Person" />
+                <input type="submit" value="Update Driver" />
             </form>
         </div>
     )

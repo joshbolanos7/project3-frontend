@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"
-
+import car from "../public/images/formula-one-car.png"
 function Index(props) {
 
     const [newForm, setNewForm] = useState({
@@ -35,7 +35,7 @@ function Index(props) {
     };
 
     const loading = () => {
-        return <h1>Loading...</h1>;
+        return <h1> <img src={car} width="100px" height="75px"></img>💨</h1>;
     };
 
     return (
@@ -69,7 +69,7 @@ function Index(props) {
                     placeholder="rating"
                     onChange={handleChange}
                 />
-                <input type="submit" value="Create Driver" />
+                <input type="submit" value="Add Driver" />
             </form>
             {props.driver ? loaded() : loading()}
         </section>

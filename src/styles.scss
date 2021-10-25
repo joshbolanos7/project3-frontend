@@ -27,6 +27,7 @@ nav {
 
   a {
     @include white-text-black-bg;
+    text-decoration: none;
 
     div {
       margin: 10px;
@@ -35,10 +36,24 @@ nav {
   }
 }
 
+.driver a{ 
+  text-decoration: none;
+}
+
+.driver { 
+ display:inline-block;
+ flex-direction: row;
+ border-style: solid;
+ border-color: aqua;
+ background-color: rgba(52, 52, 52, 0.2);
+ padding: 5px;
+}
+
 .nav{ 
   display: flex;
   flex-direction: row;
-
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 section, 
@@ -65,6 +80,9 @@ button#delete {
   padding: 10px;
 }
 
+// main { 
+  
+// }
 // :not(:last-child) img { 
 //   width: 300px;
 //   height: 300px; 
