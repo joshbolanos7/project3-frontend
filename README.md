@@ -15,8 +15,13 @@ For this app, I based it on Formula 1 Racing. The app is a working full-stack, s
 
 
 # Screenshots of deployed App: 
+![screenshot-app](src/public/images/Project3-screenshot.png)
+
+![screenshotbtm-app](src/public/images/project3-screenshot-bottom.png)
 
 # Get Started: 
+
+
 
 # Future Enchancements: 
 
