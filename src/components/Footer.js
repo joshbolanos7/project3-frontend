@@ -10,7 +10,7 @@ function Footer(props) {
         <img src={white} alt="white pirelli tire" height="75px" width="75px"/>
         <img src={yellow} alt="yellow pirelli tire" height="75px" width="75px"/>
         <img src={red} alt="red pirelli tire" height="75px" width="75px"/>
-        <img src={f1logo} alt="F1 Logo" height="50px" width="150px"<a href="" />
+       <a href="https://www.formula1.com/en/results.html/2021/drivers.html"> <img src={f1logo} alt="F1 Logo" height="50px" width="150px"/> </a>
         <img src={mercedesCar} alt ="car" height="60px" width="160px" />
         </div>
     )
