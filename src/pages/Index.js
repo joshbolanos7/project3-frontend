@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom"
 import car from "../public/images/formula-one-car.png"
+
+
+
 function Index(props) {
 
     const [newForm, setNewForm] = useState({
@@ -35,7 +38,7 @@ function Index(props) {
     };
 
     const loading = () => {
-        return <h1> <img src={car} width="100px" height="75px"></img>💨</h1>;
+        return <h1> <img src={car} width="100px" height="75px" alt="car" ></img>💨</h1>;
     };
 
     return (

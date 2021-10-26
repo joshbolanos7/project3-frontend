@@ -15,16 +15,16 @@ function Header(props){
         <nav className="nav">
             <Link to ="/">
                 {/* <div>F1 Log App</div> */}
-                <img src={mercedes}></img>
-                <img src ={redbull}></img>
-                <img src ={ferrari}></img>
-                <img src ={McLaren} height="75px" width="150px"></img>
-                <img src ={AlphaTauri} height="75px" width="150px"></img>
-                <img src ={Alpine} height="75px" width="100px"></img>
-                <img src ={astonMartin} height="100px" width="150px"></img>
-                <img src ={AlfaRomeo} height="100px" width="150px"></img>
-                <img src ={williams} height="75px" width="100px"></img>
-                <img src ={haas} height="100px" width="150px"></img>
+                <img src={mercedes} alt=""></img>
+                <img src ={redbull} alt=""></img>
+                <img src ={ferrari}alt=""></img>
+                <img src ={McLaren} alt="" height="75px" width="150px"></img>
+                <img src ={AlphaTauri} alt="" height="75px" width="150px"></img>
+                <img src ={Alpine} alt="" height="75px" width="100px"></img>
+                <img src ={astonMartin} alt="" height="100px" width="150px"></img>
+                <img src ={AlfaRomeo} alt="" height="100px" width="150px"></img>
+                <img src ={williams} alt="" height="75px" width="100px"></img>
+                <img src ={haas} alt="" height="100px" width="150px"></img>
 
             </Link>
         </nav>

@@ -27,7 +27,7 @@ function Main(props) {
 
     const updateDriver = async (driver, id) => {
         await fetch(URL + id, { 
-            method: "PUT" , 
+            method: "PUT", 
             headers: {
                 "Content-Type": "Application/json", 
             },

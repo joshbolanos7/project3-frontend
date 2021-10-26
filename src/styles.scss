@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
 // --------------------------
 // VARIABLES
 // --------------------------
@@ -13,6 +15,17 @@ $contrastcolor: white;
   color: $maincolor;
   background-color: $contrastcolor;
 }
+
+@mixin background-i {
+  background-image: url(./public/images/webpage-background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+
+}
+
+
 
 // --------------------------
 // Header
@@ -38,14 +51,22 @@ nav {
 
 .driver a{ 
   text-decoration: none;
+  color: greenyellow;
 }
 
+.driver a:visited{ 
+  color: red;
+}
+
+.driver a:hover{ 
+  color: yellow;
+}
 .driver { 
  display:inline-block;
  flex-direction: row;
  border-style: solid;
- border-color: aqua;
- background-color: rgba(52, 52, 52, 0.2);
+ border-color: crimson;
+ background-color: rgba(0, 0, 0, 0.7);
  padding: 5px;
 }
 
@@ -64,9 +85,11 @@ dev {
       padding: 10px;
       font-size: 1.1em;
       margin: 10px;
+     
 
       &[type="submit"]:hover { 
         @include black-test-white-bg;
+        font-family: 'Titillium Web', sans-serif;
       }
     }
   }
@@ -78,14 +101,24 @@ button#delete {
   margin: auto;
   font-size: 1.3em;
   padding: 10px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-// main { 
-  
-// }
-// :not(:last-child) img { 
-//   width: 300px;
-//   height: 300px; 
-//   border-radius: 90px; 
-//   object-fit: cover;
-// }
+main { 
+  font-family: 'Titillium Web', sans-serif;
+  @include background-i;
+ }
+
+ footer { 
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   padding-top: 5px;
+ }
+
+ .person { 
+   color: white;
+   padding: 10px;
+   font-size: 1.1em;
+   margin: 10px;
+ }
