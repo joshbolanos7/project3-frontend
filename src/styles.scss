@@ -109,16 +109,28 @@ main {
   @include background-i;
  }
 
- footer { 
-   display: flex;
-   flex-direction: column;
-   flex-grow: 1;
-   padding-top: 5px;
- }
+//  footer { 
+//    display: flex;
+//    flex-direction: column;
+//    flex-grow: 1;
+//    padding-top: 10px;
+//  }
+
+.footer-contain { 
+  padding-top: 1rem;
+  }
 
  .person { 
    color: white;
    padding: 10px;
    font-size: 1.1em;
    margin: 10px;
+ }
+
+ .carousel { 
+   width: 900px;
+   height: 500px;
+   margin: auto;
+   display: block;
+   padding: 1rem;
  }

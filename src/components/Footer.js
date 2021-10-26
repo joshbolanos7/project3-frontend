@@ -3,6 +3,7 @@ import mercedesCar from "../public/images/mercedes-car.png"
 import yellow from"../public/images/pirelli-yellow-tire.png"
 import white from "../public/images/pirelli-white-tire.png"
 import red from "../public/images/pirelli-red-tire.png"
+
 function Footer(props) {
     return (
         <div className="footer-contain">
@@ -10,7 +11,7 @@ function Footer(props) {
         <img src={yellow} alt="yellow pirelli tire" height="75px" width="75px"/>
         <img src={red} alt="red pirelli tire" height="75px" width="75px"/>
         <img src={f1logo} alt="F1 Logo" height="50px" width="150px" />
-        <img src={mercedesCar} height="60px" width="160px" />
+        <img src={mercedesCar} alt ="car" height="60px" width="160px" />
         </div>
     )
 }
